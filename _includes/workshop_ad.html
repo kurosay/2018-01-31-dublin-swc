@@ -11,6 +11,11 @@
           <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
         </div>
         <div class="col-md-6">
+          {% if page.venue %}
+          <p>
+          <strong>Venue:</strong>
+          {{page.venue | join: ', ' %}}
+          </p>
           <p>
           <strong>Instructors:</strong>
           {% if page.instructor %}
